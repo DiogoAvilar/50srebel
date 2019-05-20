@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>50's Rebel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="assets/css/meu-css.css">
+    <link rel="shortcut icon" href="assets/img/favicon_1.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/meu-js.js"></script>
+    <style>
+        @font-face {
+            font-family: "Montserrat-Regular";
+            src: url("montserrat-regular.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Qiba-Serif";
+            src: url("qiba-serif.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Montserrat-Bold";
+            src: url("montserrat-bold.ttf") format("truetype");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="viewport" class="l-viewport">
+        <header class="header">
+            <a class="header--logo" href="bootstrap.html">
+                <img src="assets/img/logo.png" alt="50's Rebel">
+            </a>
+            <a class="icone" href="https://www.instagram.com/br/">
+                <img src="assets/img/instapreto.png" width=20px>
+            </a>
+            <a class="icone" href="https://www.instagram.com/br/">
+                <img src="assets/img/tt.png" width=20px>
+            </a>
+            <a class="icone" href="https://www.facebook.com/br/">
+                <img src="assets/img/face.png" width=20px>
+            </a>
+        </header>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <nav class="l-side-nav">
+                    <ul class="side-nav">
+                        <li class="is-active">
+                            <span>
+                                <a href="#home">Home</a>
+                            </span>
+                        </li>
+                        <li class="is-active">
+                            <span>
+                                <a href="#artistas">Artistas</a>
+                            </span>
+                        </li>
+                        <li class="is-active">
+                            <span>
+                                <a href="#albuns">Álbuns</a>
+                            </span>
+                        </li>
+                        <li class="is-active">
+                            <span>
+                                <a href="#andy-warhol">Andy Warhol</a>
+                            </span>
+                        </li>
+                        <li class="is-active">
+                            <span>
+                                <a href="#fale-conosco">Fale conosco</a>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <ul class="l-main-content main-content">
+        <div id="home" class="container-fluid">
+            <div class="intro">
+                <div id="intro--banner">
+                    <div id="intro--texto">
+                        <img src="assets/img/ca.png" class="img-home">
+                        <a href="#andy-warhol">
+                            <img src="assets/img/Botoes/descubra.png" class="img-botao-home">
+                        </a>
+                    </div>
+                    <img src="assets/img/home4.png" alt="Welcome" class="banner2">
+
+                </div>
+                <div class="intro--options">
+                    <div class="clicar">
+                        <a onclick="historia()">
+                            <h3>História do Jazz</h3>
+                            <p>A origem e o desenvolvimento desse estilo musical</p>
+                        </a>
+                    </div>
+                    <div class="clicar">
+                        <a onclick="cinquenta()">
+                            <h3>Jazz nos anos 50</h3>
+                            <p>A época do auge mundial do sucesso do jazz</p>
+                        </a>
+                    </div>
+                    <div class="clicar">
+                        <a onclick="projeto()">
+                            <h3>O 50's Rebel</h3>
+                            <p>O projeto de jazz que se inspirou nos traços de Andy warhol</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="artistas" class="container-fluid">
+
+            <!--<div class="about--banner"></div>-->
+            <li class="l-section section">
+                <div class="artistas" id="artistas-slider">
+                    <div class="artistas-texto">
+                        <img src="assets/img/camila.png" style="width:700px; margin-left: 70px">
+                        <p>
+                            <i>Eric J. Hobsbawm</i>
+                        </p>
+                    </div>
+                    <div class="artistas--lockup">
+                        <ul class="a-slider">
+                            <li class="a-item">
+                                <a href="#a-monk" onclick="sumirArtistas()">
+                                    <div class="a-image">
+                                        <img src="assets/img/a-thelonious2.jpg" alt="Monk">
+                                    </div>
+                                    <p class="a-title">Thelonious Monk</p>
+                                    <div class="a-description">
+                                        <br>
+
+                                        <br>
+                                        <br>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-item ">
+                                <a href="#a-count" onclick="sumirArtistas()">
+                                    <div class="a-image">
+                                        <img src="assets/img/a-count2.jpg" alt="Count Basie">
+                                    </div>
+                                    <p class="a-title">Count Basie</p>
+                                    <div class="a-description">
+                                        <br>
+
+                                        <br>
+                                        <br>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-item ">
+                                <a href="#a-jj" onclick="sumirArtistas()">
+                                    <div class="a-image">
+                                        <img src="assets/img/a-jj2.jpg" alt="Trombone By Three">
+                                    </div>
+                                    <p class="a-title">J J Johnson</p>
+                                    <div class="a-description">
+                                        <br>
+
+                                        <br>
+                                        <br>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-item">
+                                <a href="#a-kenny" onclick="sumirArtistas()">
+                                    <div class="a-image">
+                                        <img src="assets/img/a-kenny2.jpg" alt="Kenny Burrell Vol. 2">
+                                    </div>
+                                    <p class="a-title">Kenny Burrell</p>
+                                    <div class="a-description">
+                                        <br>
+
+                                        <br>
+                                        <br>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-item">
+                                <a href="#a-johnny" onclick="sumirArtistas()">
+                                    <div class="a-image">
+                                        <img src="assets/img/a-johnny2.jpg" alt="Blue Lights, Volume 1">
+                                    </div>
+                                    <p class="a-title">Johnny Griffin</p>
+                                    <div class="a-description">
+                                        <br>
+
+                                        <br>
+                                        <br>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-item">
+                                <a href="#a-moondog" onclick="sumirArtistas()">
+                                    <div class="a-image">
+                                        <img src="assets/img/a-moondog2.jpg" alt="The Story Of Moondog">
+                                    </div>
+                                    <p class="a-title"> Moondog</p>
+                                    <div class="a-description">
+                                        <br>
+
+                                        <br>
+                                        <br>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--<div class="slider--prev">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                                c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                                c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
+                                </g>
+                            </svg>
+                            <img src="assets/img/setaesquerda.png" width="50">
+                        </div>
+                        <div class="slider--next">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                    <path
+                                        d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                </g>
+                            </svg>
+                            <img src="assets/img/setadireita.png" width="50">
+                        </div>-->
+                    </div>
+                </div>
+            </li>
+            <div class="artista" id="a-monk">
+                <a href="#artistas-slider" onclick="voltarArtistas()">
+                    <img src="assets/img/Botoes/voltarBranco.png" class="img-botao-a">
+                </a>
+                <div class="infoArtista">
+                    <img src="assets/img/a-thelonious2.jpg" alt="Monk" class="artista-img">
+                    <div class="textoArtista">
+                        <h2>Thelonious Monk</h2>
+                        <p>Thelonious Monk é um dos maiores músicos de jazz de todos os tempos e um dos primeiros
+                            criadores
+                            de jazz moderno e bebop. Durante grande parte de sua carreira, Monk tocou com pequenos
+                            grupos
+                            no Milton's Playhouse. Muitas de suas composições se tornaram padrões de jazz, incluindo
+                            "Well,
+                            You Needn't,"Blue Monk" e "Round Midnight". Suas peças sobressalentes e música angular
+                            tinham
+                            uma leviandade e brincadeira para ele.</p><br>
+                        <a href="#monk" onclick="sumir()">
+                            <img src="assets/img/Botoes/album.png" class="img-botao-play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="artista" id="a-count">
+                <a href="#artistas-slider" onclick="voltarArtistas()">
+                    <img src="assets/img/Botoes/voltarBranco.png" class="img-botao-a">
+                </a>
+                <div class="infoArtista">
+                    <img src="assets/img/a-count2.jpg" alt="Count" class="artista-img">
+                    <div class="textoArtista">
+                        <h2>Count Basie</h2>
+                        <p>Count Basie nasceu em 21 de agosto de 1904, em Red Bank, Nova Jersey. Um pianista, ele tocou
+                            vaudeville
+                            antes de formar sua própria big band e ajudou a definir a era do swing com sucessos como
+                            "One
+                            O'Clock Jump" e "Blue Skies". Em 1958, Basie tornou-se o primeiro homem afro-americano a
+                            receber
+                            um Grammy Award. Um dos maiores de todos os tempos da música jazz, ele ganhou muitos outros
+                            Grammys
+                            ao longo de sua carreira e trabalhou com uma infinidade de artistas, incluindo Joe Williams
+                            e
+                            Ella Fitzgerald. Basie morreu na Flórida em 26 de abril de 1984.</p>
+                        <a href="#count" onclick="sumir()">
+                            <img src="assets/img/Botoes/album.png" class="img-botao-play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="artista" id="a-jj">
+                <a href="#artistas-slider" onclick="voltarArtistas()">
+                    <img src="assets/img/Botoes/voltarBranco.png" class="img-botao-a">
+                </a>
+                <div class="infoArtista">
+                    <img src="assets/img/a-jj2.jpg" alt="J J Johnson" class="artista-img">
+                    <div class="textoArtista">
+                        <h2>J J Johnson</h2>
+                        <p>Nascido em 22 de janeiro de 1924, em Indianapolis, Indiana, J.J. Johnson se tornou um dos
+                            trombonistas
+                            mais bem sucedidos do jazz, tocando com nomes como Benny Carter, Count Basie e Dizzy
+                            Gillespie.
+                            Ele formou a dupla de trombone Jay e Kai e compôs obras aclamadas como “Perceptions.”Johnson
+                            mais tarde escreveu música para TV e cinema. Depois de lutar contra a doença, ele cometeu
+                            suicídio
+                            em 4 de fevereiro de 2001.</p>
+                        <a href="#trombone" onclick="sumir()">
+                            <img src="assets/img/Botoes/album.png" class="img-botao-play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="artista" id="a-kenny">
+                <a href="#artistas-slider" onclick="voltarArtistas()">
+                    <img src="assets/img/Botoes/voltarBranco.png" class="img-botao-a">
+                </a>
+                <div class="infoArtista">
+                    <img src="assets/img/a-kenny2.jpg" alt="Kenny Burrell" class="artista-img">
+                    <div class="textoArtista">
+                        <h2>Kenny Burrell</h2>
+                        <p>Um dos principais expoentes da guitarra de jazz, Kenny Burrell é um artista altamente
+                            influente,
+                            cujo estilo discreto e melódico, baseado no bebop e no blues, fez dele um acompanhante em
+                            demanda
+                            desde meados dos anos 50 em diante e um padrão por que muitos guitarristas de jazz se
+                            avaliam
+                            até hoje. Nascido em Detroit em 1931, Burrell começou a tocar guitarra aos 12 anos. Cercado
+                            pela
+                            vibrante cena de jazz e blues de Detroit, Burrell começou a fazer shows pela cidade e contou
+                            com seus amigos e companheiros de banda, o pianista Tommy Flanagan, os saxofonistas Pepper
+                            Adams
+                            e Yusef Lateef, o baterista Elvin Jones e outros.</p>
+                        <a href="#kenny" onclick="sumir()">
+                            <img src="assets/img/Botoes/album.png" class="img-botao-play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="artista" id="a-johnny">
+                <a href="#artistas-slider" onclick="voltarArtistas()">
+                    <img src="assets/img/Botoes/voltarBranco.png" class="img-botao-a">
+                </a>
+                <div class="infoArtista">
+                    <img src="assets/img/a-johnny2.jpg" alt="Johnny Griffin" class="artista-img">
+                    <div class="textoArtista">
+                        <h2>Johnny Griffin</h2>
+                        <p>Merv Griffin era um apresentador de televisão e magnata de negócios. De um amor de
+                            quebra-cabeças
+                            e jogos, ele construiu um império. Seus programas de jogos, programas de entrevistas, hotéis
+                            e outros produtos de mídia fizeram dele um dos homens mais ricos do mundo. Ele primeiro
+                            concebeu
+                            o show Jeopardy! em 1964, em seguida, Wheel of Fortune em '75. Ele comprou o Beverly Hilton
+                            Hotel
+                            nos anos 80. Griffin morreu de câncer de próstata em 2007.
+                        </p>
+                        <a href="#congregation" onclick="sumir()">
+                            <img src="assets/img/Botoes/album.png" class="img-botao-play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="artista" id="a-moondog">
+                <a href="#artistas-slider" onclick="voltarArtistas()">
+                    <img src="assets/img/Botoes/voltarBranco.png" class="img-botao-a">
+                </a>
+                <div class="infoArtista">
+                    <img src="assets/img/a-moondog2.jpg" alt="Moondog" class="artista-img">
+                    <div class="textoArtista">
+                        <h2>Moondog</h2>
+                        <p>Moondog é o pseudônimo de Louis Thomas Hardin compositor, músico, cosmologista e poeta.
+                            Moondog era
+                            um deficiente visual, ainda assim em vida fora capaz de trabalhar com artesanato e criar
+                            alguns
+                            instrumentos musicais. Retirou-se da sociedade por opção própria para fazer das ruas de Nova
+                            York a sua casa por aproximadamente vinte anos, dos trinta passados na cidade. Somente nas
+                            últimas
+                            décadas de vida passou a receber algum reconhecimento pelo seu trabalho; em suma, além do
+                            aparente
+                            retiro, se recusou a vestir nada mais além das roupas artesanalmente feitas por ele, todas
+                            baseadas
+                            na sua própria interpretação do deus nórdico Odin. De fato, foi por muito tempo conhecido
+                            como
+                            "O Viquingue da 6ª Avenida", enquanto em Nova Iorque.</p>
+                        <a href="#moondog" onclick="sumir()">
+                            <img src="assets/img/Botoes/album.png" class="img-botao-play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--acima FINAL DIV ABOUT-->
+        </div>
+        <!-- acimaFINAL DIV ARTISTAS-->
+        <!-- abaixo COMEÇO DIV ALBUNS-->
+        <div id="albuns" class="container-fluid">
+            <li class="l-section section" id="albunsdentro">
+                <div class="work">
+                    <img src="assets/img/la.png" style="width:150px; align-self: center; margin-bottom: 20px">
+                    <div class="work--lockup">
+                        <ul class="slider">
+                            <li class="slider--item slider--item-left">
+                                <a href="#monk" onclick="sumir()">
+                                    <div class="slider--item-image">
+                                        <img src="assets/img/monk.jpg" alt="Monk">
+                                    </div>
+                                    <p class="slider--item-title">Monk</p>
+                                    <div class="slider--item-description">
+                                        <br>
+                                        <a href="#monk" onclick="sumir()">
+                                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a class="icone" href="http://youtube.com.br">
+                                            <img src="assets/img/yt.png" width=30px>
+                                        </a>
+                                        <a class="icone" href="https://www.spotify.com/br/">
+                                            <img src="assets/img/spotify.png" width=25px>
+                                        </a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider--item slider--item-center">
+                                <a href="#count" onclick="sumir()">
+                                    <div class="slider--item-image">
+                                        <img src="assets/img/count.jpg" alt="Count Basie">
+                                    </div>
+                                    <p class="slider--item-title">Count Basie</p>
+                                    <div class="slider--item-description">
+                                        <br>
+                                        <a href="#count" onclick="sumir()">
+                                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                                        </a>
+                                </a>
+                                <br>
+                                <br>
+                                <a class="icone" href="http://youtube.com.br">
+                                    <img src="assets/img/yt.png" width=30px>
+                                </a>
+                                <a class="icone" href="https://www.spotify.com/br/">
+                                    <img src="assets/img/spotify.png" width=25px>
+                                </a>
+                    </div>
+                    </a>
+            </li>
+            <li class="slider--item slider--item-right">
+                <a href="#trombone" onclick="sumir()">
+                    <div class="slider--item-image">
+                        <img src="assets/img/bythree.jpg" alt="Trombone By Three">
+                    </div>
+                    <p class="slider--item-title">Trombone By Three</p>
+                    <div class="slider--item-description">
+                        <br>
+                        <a href="#trombone" onclick="sumir()">
+                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                        </a>
+                        <br>
+                        <br>
+                        <a class="icone" href="http://youtube.com.br">
+                            <img src="assets/img/yt.png" width=30px>
+                        </a>
+                        <a class="icone" href="https://www.spotify.com/br/">
+                            <img src="assets/img/spotify.png" width=25px>
+                        </a>
+                    </div>
+                </a>
+            </li>
+            <li class="slider--item">
+                <a href="#kenny" onclick="sumir()">
+                    <div class="slider--item-image">
+                        <img src="assets/img/kenny.jpg" alt="Kenny Burrell Vol. 2">
+                    </div>
+                    <p class="slider--item-title">Kenny Burrell Vol. 2</p>
+                    <div class="slider--item-description">
+                        <br>
+                        <a href="#kenny" onclick="sumir()">
+                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                        </a>
+                        <br>
+                        <br>
+                        <a class="icone" href="http://youtube.com.br">
+                            <img src="assets/img/yt.png" width=30px>
+                        </a>
+                        <a class="icone" href="https://www.spotify.com/br/">
+                            <img src="assets/img/spotify.png" width=25px>
+                        </a>
+                    </div>
+                </a>
+            </li>
+            <li class="slider--item">
+                <a href="#blue" onclick="sumir()">
+                    <div class="slider--item-image">
+                        <img src="assets/img/blue.jpg" alt="Blue Lights, Volume 1">
+                    </div>
+                    <p class="slider--item-title">Blue Lights, Volume 1</p>
+                    <div class="slider--item-description">
+                        <br>
+                        <a href="#blue" onclick="sumir()">
+                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                        </a>
+                        <br>
+                        <br>
+                        <a class="icone" href="http://youtube.com.br">
+                            <img src="assets/img/yt.png" width=30px>
+                        </a>
+                        <a class="icone" href="https://www.spotify.com/br/">
+                            <img src="assets/img/spotify.png" width=25px>
+                        </a>
+                    </div>
+                </a>
+            </li>
+            <li class="slider--item">
+                <a href="#congregation" onclick="sumir()">
+                    <div class="slider--item-image">
+                        <img src="assets/img/the.jpg" alt="The Congregation">
+                    </div>
+                    <p class="slider--item-title">The Congregation</p>
+                    <div class="slider--item-description">
+                        <br>
+                        <a href="#congregation" onclick="sumir()">
+                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                        </a>
+                        <br>
+                        <br>
+                        <a class="icone" href="http://youtube.com.br">
+                            <img src="assets/img/yt.png" width=30px>
+                        </a>
+                        <a class="icone" href="https://www.spotify.com/br/">
+                            <img src="assets/img/spotify.png" width=25px>
+                        </a>
+                    </div>
+                </a>
+            </li>
+            <li class="slider--item">
+                <a href="#moondog" onclick="sumir()">
+                    <div class="slider--item-image">
+                        <img src="assets/img/story.jpg" alt="The Story Of Moondog">
+                    </div>
+                    <p class="slider--item-title">The Story Of Moondog</p>
+                    <div class="slider--item-description">
+                        <br>
+                        <a href="#moondog" onclick="sumir()">
+                            <img src="assets/img/Botoes/ouca.png" class="img-botao-play">
+                        </a>
+                        <br>
+                        <br>
+                        <a class="icone" href="http://youtube.com.br">
+                            <img src="assets/img/yt.png" width=30px>
+                        </a>
+                        <a class="icone" href="https://www.spotify.com/br/">
+                            <img src="assets/img/spotify.png" width=25px>
+                        </a>
+                    </div>
+                </a>
+            </li>
+    </ul>
+    <div class="slider--prev">
+        <!--<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                            c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                            c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
+                                </g>
+                            </svg>-->
+        <img src="assets/img/setapretaesquerda.png" width="50">
+    </div>
+    <div class="slider--next">
+        <!--<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                    <path
+                                        d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                </g>
+                            </svg>-->
+        <img src="assets/img/setapretadireita.png" width="50">
+    </div>
+    </div>
+    </div>
+    </li>
+    <!--COMEÇO DAS DIVS PLAYLISTS-->
+    <div class="totalplay" id="monk">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/monk.jpg" width="250px">
+            <label id="disco">Monk</label>
+            <label id="cantor">Thelonious Monk, Sonny Rollins &amp; Frank Foster </label>
+        </div>
+
+        <audio id="musica1">
+            <source src="assets/musicas/monk/we-see.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica2">
+            <source src="assets/musicas/monk/smoke-gets-in-your-eyes.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica3">
+            <source src="assets/musicas/monk/locomotive.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica4">
+            <source src="assets/musicas/monk/Hackensack.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica5">
+            <source src="assets/musicas/monk/let s-call-this.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao1" onClick="play(1);">
+            <p>We See</p>
+        </div>
+        <div class="botao" id="botao2" onClick="play(2);">
+            <p>Smoke Gets In Your Eyes</p>
+        </div>
+        <div class="botao" id="botao3" onClick="play(3);">
+            <p>Locomotive</p>
+        </div>
+        <div class="botao" id="botao4" onClick="play(4);">
+            <p>Hackensack </p>
+        </div>
+        <div class="botao" id="botao5" onClick="play(5);">
+            <p>Let's Call This</p>
+        </div>
+    </div>
+
+    <div class="totalplay" id="count">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/count.jpg" width="250px">
+            <label id="disco">Count Basie</label>
+            <label id="cantor">Count Basie And His Orchestra</label>
+        </div>
+        <audio id="musica6">
+            <source src="assets/musicas/count/if-you-see-my-baby.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica7">
+            <source src="assets/musicas/count/mr-roberts-roost.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica8">
+            <source src="assets/musicas/count/my-buddy.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica9">
+            <source src="assets/musicas/count/seventh avenue express.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica10">
+            <source src="assets/musicas/count/w-thing.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao6" onClick="play(6);">
+            <p>If You See My Baby</p>
+        </div>
+        <div class="botao" id="botao7" onClick="play(7);">
+            <p>Mr. Roberts Roost</p>
+        </div>
+        <div class="botao" id="botao8" onClick="play(8);">
+            <p>My Buddy</p>
+        </div>
+        <div class="botao" id="botao9" onClick="play(9);">
+            <p>Seventh Avenue Express</p>
+        </div>
+        <div class="botao" id="botao10" onClick="play(10);">
+            <p>Wonderful Thing</p>
+        </div>
+
+    </div>
+
+    <div class="totalplay" id="trombone">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/bythree.jpg" width="250px">
+            <label id="disco">Trombone By Three</label>
+            <label id="cantor">Jay Jay Johnson, Kai Winding &amp; Bennie Green</label>
+        </div>
+        <audio id="musica11">
+            <source src="assets/musicas/trombone/bags groove.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica12">
+            <source src="assets/musicas/trombone/dinner for one.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica13">
+            <source src="assets/musicas/trombone/how long has this been going on.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica14">
+            <source src="assets/musicas/trombone/riviera.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica15">
+            <source src="assets/musicas/trombone/there s a small hotel.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao11" onClick="play(11);">
+            <p>Bags Groove</p>
+        </div>
+        <div class="botao" id="botao12" onClick="play(12);">
+            <p>Dinner For One</p>
+        </div>
+        <div class="botao" id="botao13" onClick="play(13);">
+            <p>How Long Has This Been Going On</p>
+        </div>
+        <div class="botao" id="botao14" onClick="play(14);">
+            <p>Riviera</p>
+        </div>
+        <div class="botao" id="botao15" onClick="play(15);">
+            <p>There's A Small Hotel</p>
+        </div>
+
+    </div>
+
+    <div class="totalplay" id="kenny">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/kenny.jpg" width="250px">
+            <label id="disco">Kenny Burrell Vol. 2</label>
+            <label id="cantor">Kenny Burrell</label>
+        </div>
+        <audio id="musica16">
+            <source src="assets/musicas/kenny/but not for me.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica17">
+            <source src="assets/musicas/kenny/get happy.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica18">
+            <source src="assets/musicas/kenny/mexico city.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica19">
+            <source src="assets/musicas/kenny/moten swing.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica20">
+            <source src="assets/musicas/kenny/now see how you are.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao16" onClick="play(16);">
+            <p>But Not For Me</p>
+        </div>
+        <div class="botao" id="botao17" onClick="play(17);">
+            <p>Get Happy</p>
+        </div>
+        <div class="botao" id="botao18" onClick="play(18);">
+            <p>Mexico City</p>
+        </div>
+        <div class="botao" id="botao19" onClick="play(19);">
+            <p>Moten Swing</p>
+        </div>
+        <div class="botao" id="botao20" onClick="play(20);">
+            <p>Now See How You Are</p>
+        </div>
+
+    </div>
+
+    <div class="totalplay" id="blue">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/blue.jpg" width="250px">
+            <label id="disco">Blue Lights, Volume 1</label>
+            <label id="cantor">Kenny Burrell</label>
+        </div>
+        <audio id="musica21">
+            <source src="assets/musicas/blue/autumn in new york.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica22">
+            <source src="assets/musicas/blue/caravan.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica23">
+            <source src="assets/musicas/blue/scotch blues.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica24">
+            <source src="assets/musicas/blue/yes baby.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao21" onClick="play(21);">
+            <p>Autumn In New York</p>
+        </div>
+        <div class="botao" id="botao22" onClick="play(22);">
+            <p>Caravan</p>
+        </div>
+        <div class="botao" id="botao23" onClick="play(23);">
+            <p>Scotch Blues</p>
+        </div>
+        <div class="botao" id="botao24" onClick="play(24);">
+            <p>Yes Baby</p>
+        </div>
+
+    </div>
+
+    <div class="totalplay" id="congregation">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/the.jpg" width="250px">
+            <label id="disco">The Congregation</label>
+            <label id="cantor">Johnny Griffin </label>
+        </div>
+        <audio id="musica25">
+            <source src="assets/musicas/congregation/Im Glad There Is You.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica26">
+            <source src="assets/musicas/congregation/its you or no one.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica27">
+            <source src="assets/musicas/congregation/latin quarter.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica28">
+            <source src="assets/musicas/congregation/main spring.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica29">
+            <source src="assets/musicas/congregation/the congregation.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao25" onClick="play(25);">
+            <p>I'm Glad There Is You</p>
+        </div>
+        <div class="botao" id="botao26" onClick="play(26);">
+            <p>It's You Or No One</p>
+        </div>
+        <div class="botao" id="botao27" onClick="play(27);">
+            <p>Latin Quarter</p>
+        </div>
+        <div class="botao" id="botao28" onClick="play(28);">
+            <p>Main Spring</p>
+        </div>
+        <div class="botao" id="botao29" onClick="play(29);">
+            <p>The Congregation</p>
+        </div>
+
+    </div>
+
+    <div class="totalplay" id="moondog">
+        <a href="#albunsdentro" onclick="voltar()">
+            <img src="assets/img/Botoes/voltar.png" class="img-botao-play">
+        </a>
+        <div class="containerplay">
+            <img id="image" src="assets/img/story.jpg" width="250px">
+            <label id="disco">The Story Of Moondog </label>
+            <label id="cantor">Moondog </label>
+        </div>
+        <audio id="musica30">
+            <source src="assets/musicas/moondog/duet.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica31">
+            <source src="assets/musicas/moondog/moondogs theme.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica32">
+            <source src="assets/musicas/moondog/organ rounds.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica33">
+            <source src="assets/musicas/moondog/perpetual motion.mp3" type="audio/mp3">
+        </audio>
+        <audio id="musica34">
+            <source src="assets/musicas/moondog/trimbas in quarters.mp3" type="audio/mp3">
+        </audio>
+        <div class="botao" id="botao30" onClick="play(30);">
+            <p>Duet</p>
+        </div>
+        <div class="botao" id="botao31" onClick="play(31);">
+            <p>Moondog's Theme</p>
+        </div>
+        <div class="botao" id="botao32" onClick="play(32);">
+            <p>Organ Rounds</p>
+        </div>
+        <div class="botao" id="botao33" onClick="play(33);">
+            <p>Perpetual Motion</p>
+        </div>
+        <div class="botao" id="botao34" onClick="play(34);">
+            <p>Trimbas In Quarters</p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div id="andy-warhol" class="container-fluid">
+        <div class=a ndy>
+            <h1>Andy Warhol</h1>
+            <br>
+            <video width="600" controls>
+                <source src="assets/img/7-rings.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="fale-conosco" class="container-fluid">
+        <form method="POST" action="Inserir.php" class="contact_form">
+            <h1>Fale conosco</h1>
+            <br>
+            <div class="pergunta">
+                <label>Nome</label>
+                <br>
+                <input type="text" name="nome" size="50" required/>
+            </div>
+
+            <div class="pergunta">
+                <label>E-mail</label>
+                <br>
+                <input type="email" name="email" size="50" required/>
+            </div>
+
+            <div class="pergunta">
+
+                <label>Mensagem</label>
+                <br>
+                <textarea rows="5" cols="80" name="mensagem" required></textarea>
+
+            </div>
+
+            <!-- <button type="submit">Enviar
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                            <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
+                            />
+                        </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                </button>
+                <input type="image" src="assets/img/Botoes/enviar.png" border="0" alt="Enviar" width="500px" />-->
+            <button type="submit">
+                <img src="assets/img/Botoes/enviar.png" width="100px" />
+            </button>
+    </div>
+    </form>
+    </div>
+    </ul>
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="assets/js/functions-min.js"></script>-->
+
+</body>
+
+</html>

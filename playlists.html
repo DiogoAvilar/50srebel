@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playlists</title>
+    <style>
+        @font-face {
+            font-family: "Montserrat-Regular";
+            src: url("montserrat-regular.ttf") format("truetype");
+        }
+
+        .botao {
+            height: 40px;
+            width: 298px;
+            padding-left: 60px;
+            padding-bottom: 20px;
+            color: white;
+            border: 1px solid;
+            border-color: #F2E1D7;
+            background-image: url("play-branco.png");
+            background-color: #138F8A;
+            background-position-y: 12px;
+            background-position-x: 10px;
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+        }
+
+        .botao:hover {
+            color: black;
+            border-color: black;
+            background-color: rgb (112, 111, 111);
+        }
+
+        .container {
+            position: relative;
+        }
+
+        #disco {
+            color: white;
+            position: absolute;
+            font-size: 30px;
+            left: 10px;
+            top: 290px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        #cantor {
+            color: white;
+            position: absolute;
+            font-size: 12px;
+            left: 10px;
+            top: 330px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .total {
+            font-family: Montserrat-Regular;
+            margin: auto;
+            width: 360px;
+            height: 675px;
+            display: block;
+            background-color: #F2E1D7;
+            border: 5px solid;
+            border-color: #F2E1D7;
+        }
+
+        .container:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            bottom: 0;
+        }
+
+        p {
+            font-size: 15px
+        }
+
+        #blue {
+            height: 613px
+        }
+    </style>
+    <script>
+        status = "true";
+        function play(numero) {
+            if (status == "true") {
+                document.getElementById("musica" + numero).play();
+                document.getElementById("botao" + numero).style.backgroundImage = "url('pause-branco.png')";
+                status = "false";
+            } else {
+                document.getElementById("musica" + numero).pause();
+                document.getElementById("botao" + numero).style.backgroundImage = "url('play-branco.png')";
+                status = "true";
+            }
+        }
+                //ao terminar de tocar uma musica, ir para a proxima
+                //quando clicar em outra, parar a que está tocando
+    </script>
+</head>
+
+<body>
+    <div class="totalplay" id="monk">
+        <div class="container">
+            <img id="image" src="assets/img/monk.jpg" width="360px">
+            <label id="disco">Monk</label>
+            <label id="cantor">Thelonious Monk with Sonny Rollins and Frank Foster </label>
+        </div>
+        <audio id="musica1">
+            <source src="assets/musicas/monk/we-see.mp3" type="audio/mp3"></audio>
+        <audio id="musica2">
+            <source src="assets/musicas/monk/smoke-gets-in-your-eyes.mp3" type="audio/mp3"></audio>
+        <audio id="musica3">
+            <source src="assets/musicas/monk/locomotive.mp3" type="audio/mp3"></audio>
+        <audio id="musica4">
+            <source src="assets/musicas/monk/Hackensack.mp3" type="audio/mp3"></audio>
+        <audio id="musica5">
+            <source src="assets/musicas/monk/let s-call-this.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao1" onClick="play(1);">
+            <p>We See</p>
+        </div>
+        <div class="botao" id="botao2" onClick="play(2);">
+            <p>Smoke Gets In Your Eyes</p>
+        </div>
+        <div class="botao" id="botao3" onClick="play(3);">
+            <p>Locomotive</p>
+        </div>
+        <div class="botao" id="botao4" onClick="play(4);">
+            <p>Hackensack </p>
+        </div>
+        <div class="botao" id="botao5" onClick="play(5);">
+            <p>Let's Call This</p>
+        </div>
+    </div>
+    <div class="totalplay" id="count">
+        <div class="container">
+            <img id="image" src="assets/img/count.jpg" width="360px">
+            <label id="disco">Count Basie</label>
+            <label id="cantor">Count Basie And His Orchestra</label>
+        </div>
+        <audio id="musica6">
+            <source src="assets/musicas/count/if-you-see-my-baby.mp3" type="audio/mp3"></audio>
+        <audio id="musica7">
+            <source src="assets/musicas/count/mr-roberts-roost.mp3" type="audio/mp3"></audio>
+        <audio id="musica8">
+            <source src="assets/musicas/count/my-buddy.mp3" type="audio/mp3"></audio>
+        <audio id="musica9">
+            <source src="assets/musicas/count/seventh avenue express.mp3" type="audio/mp3"></audio>
+        <audio id="musica10">
+            <source src="assets/musicas/count/w-thing.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao6" onClick="play(6);">
+            <p>If You See My Baby</p>
+        </div>
+        <div class="botao" id="botao7" onClick="play(7);">
+            <p>Mr. Roberts Roost</p>
+        </div>
+        <div class="botao" id="botao8" onClick="play(8);">
+            <p>My Buddy</p>
+        </div>
+        <div class="botao" id="botao9" onClick="play(9);">
+            <p>Seventh Avenue Express</p>
+        </div>
+        <div class="botao" id="botao10" onClick="play(10);">
+            <p>Wonderful Thing</p>
+        </div>
+    </div>
+    <div class="totalplay" id="trombone">
+        <div class="container">
+            <img id="image" src="assets/img/bythree.jpg" width="360px">
+            <label id="disco">Trombone By Three</label>
+            <label id="cantor">Jay Jay Johnson / Kai Winding / Bennie Green</label>
+        </div>
+        <audio id="musica11">
+            <source src="assets/musicas/trombone/bags groove.mp3" type="audio/mp3"></audio>
+        <audio id="musica12">
+            <source src="assets/musicas/trombone/dinner for one.mp3" type="audio/mp3"></audio>
+        <audio id="musica13">
+            <source src="assets/musicas/trombone/how long has this been going on.mp3" type="audio/mp3"></audio>
+        <audio id="musica14">
+            <source src="assets/musicas/trombone/riviera.mp3" type="audio/mp3"></audio>
+        <audio id="musica15">
+            <source src="assets/musicas/trombone/there s a small hotel.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao11" onClick="play(11);">
+            <p>Bags Groove</p>
+        </div>
+        <div class="botao" id="botao12" onClick="play(12);">
+            <p>Dinner For One</p>
+        </div>
+        <div class="botao" id="botao13" onClick="play(13);">
+            <p>How Long Has This Been Going On</p>
+        </div>
+        <div class="botao" id="botao14" onClick="play(14);">
+            <p>Riviera</p>
+        </div>
+        <div class="botao" id="botao15" onClick="play(15);">
+            <p>There's A Small Hotel</p>
+        </div>
+    </div>
+    <div class="totalplay" id="kenny">
+        <div class="container">
+            <img id="image" src="assets/img/kenny.jpg" width="360px">
+            <label id="disco">Kenny Burrell Vol. 2</label>
+            <label id="cantor">Kenny Burrell</label>
+        </div>
+        <audio id="musica16">
+            <source src="assets/musicas/kenny/but not for me.mp3" type="audio/mp3"></audio>
+        <audio id="musica17">
+            <source src="assets/musicas/kenny/get happy.mp3" type="audio/mp3"></audio>
+        <audio id="musica18">
+            <source src="assets/musicas/kenny/mexico city.mp3" type="audio/mp3"></audio>
+        <audio id="musica19">
+            <source src="assets/musicas/kenny/moten swing.mp3" type="audio/mp3"></audio>
+        <audio id="musica20">
+            <source src="assets/musicas/kenny/now see how you are.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao16" onClick="play(16);">
+            <p>But Not For Me</p>
+        </div>
+        <div class="botao" id="botao17" onClick="play(17);">
+            <p>Get Happy</p>
+        </div>
+        <div class="botao" id="botao18" onClick="play(18);">
+            <p>Mexico City</p>
+        </div>
+        <div class="botao" id="botao19" onClick="play(19);">
+            <p>Moten Swing</p>
+        </div>
+        <div class="botao" id="botao20" onClick="play(20);">
+            <p>Now See How You Are</p>
+        </div>
+    </div>
+    <div class="totalplay" id="blue">
+        <div class="container">
+            <img id="image" src="assets/img/blue.jpg" width="360px">
+            <label id="disco">Blue Lights, Volume 1</label>
+            <label id="cantor">Kenny Burrell</label>
+        </div>
+        <audio id="musica21">
+            <source src="assets/musicas/blue/autumn in new york.mp3" type="audio/mp3"></audio>
+        <audio id="musica22">
+            <source src="assets/musicas/blue/caravan.mp3" type="audio/mp3"></audio>
+        <audio id="musica23">
+            <source src="assets/musicas/blue/scotch blues.mp3" type="audio/mp3"></audio>
+        <audio id="musica24">
+            <source src="assets/musicas/blue/yes baby.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao21" onClick="play(21);">
+            <p>Autumn In New York</p>
+        </div>
+        <div class="botao" id="botao22" onClick="play(22);">
+            <p>Caravan</p>
+        </div>
+        <div class="botao" id="botao23" onClick="play(23);">
+            <p>Scotch Blues</p>
+        </div>
+        <div class="botao" id="botao24" onClick="play(24);">
+            <p>Yes Baby</p>
+        </div>
+    </div>
+    <div class="totalplay" id="congregation">
+        <div class="container">
+            <img id="image" src="assets/img/the.jpg" width="360px">
+            <label id="disco">The Congregation</label>
+            <label id="cantor">Johnny Griffin </label>
+        </div>
+        <audio id="musica25">
+            <source src="assets/musicas/congregation/Im Glad There Is You.mp3" type="audio/mp3"></audio>
+        <audio id="musica26">
+            <source src="assets/musicas/congregation/its you or no one.mp3" type="audio/mp3"></audio>
+        <audio id="musica27">
+            <source src="assets/musicas/congregation/latin quarter.mp3" type="audio/mp3"></audio>
+        <audio id="musica28">
+            <source src="assets/musicas/congregation/main spring.mp3" type="audio/mp3"></audio>
+        <audio id="musica29">
+            <source src="assets/musicas/congregation/the congregation.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao25" onClick="play(25);">
+            <p>I'm Glad There Is You</p>
+        </div>
+        <div class="botao" id="botao26" onClick="play(26);">
+            <p>It's You Or No One</p>
+        </div>
+        <div class="botao" id="botao27" onClick="play(27);">
+            <p>Latin Quarter</p>
+        </div>
+        <div class="botao" id="botao28" onClick="play(28);">
+            <p>Main Spring</p>
+        </div>
+        <div class="botao" id="botao29" onClick="play(29);">
+            <p>The Congregation</p>
+        </div>
+    </div>
+    <div class="totalplay" id="moondog">
+        <div class="container">
+            <img id="image" src="assets/img/story.jpg" width="360px">
+            <label id="disco">The Story Of Moondog </label>
+            <label id="cantor">Moondog </label>
+        </div>
+        <audio id="musica30">
+            <source src="assets/musicas/moondog/duet.mp3" type="audio/mp3"></audio>
+        <audio id="musica31">
+            <source src="assets/musicas/moondog/moondogs theme.mp3" type="audio/mp3"></audio>
+        <audio id="musica32">
+            <source src="assets/musicas/moondog/organ rounds.mp3" type="audio/mp3"></audio>
+        <audio id="musica33">
+            <source src="assets/musicas/moondog/perpetual motion.mp3" type="audio/mp3"></audio>
+        <audio id="musica34">
+            <source src="assets/musicas/moondog/trimbas in quarters.mp3" type="audio/mp3"></audio>
+        <div class="botao" id="botao30" onClick="play(30);">
+            <p>Duet</p>
+        </div>
+        <div class="botao" id="botao31" onClick="play(31);">
+            <p>Moondog's Theme</p>
+        </div>
+        <div class="botao" id="botao32" onClick="play(32);">
+            <p>Organ Rounds</p>
+        </div>
+        <div class="botao" id="botao33" onClick="play(33);">
+            <p>Perpetual Motion</p>
+        </div>
+        <div class="botao" id="botao34" onClick="play(34);">
+            <p>Trimbas In Quarters</p>
+        </div>
+    </div>
+</body>
+
+</html>

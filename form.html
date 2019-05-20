@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .borda {
+            border-color: #F60;
+        }
+
+        .conteiner {
+            position: relative;
+            float: left;
+        }
+
+        .alerta {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: -30px;
+            top: -15px;
+            padding: 5px;
+            background: #F60;
+            color: #fff;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+    </style>
+    <script>
+        function alerta(campo, msg) {
+            campo.addClass('borda').wrap('<div class="conteiner">');
+            campo.after('<div class="alerta">' + msg + '</div>').animate({ marginRight: "10px" }, 500);
+        }
+
+        $(function () {
+            $('input[type=text]').blur(function () {
+                var valor = $(this).val().trim();
+                if (valor == '' && $(this).closest('div').attr('class') != 'conteiner') {
+                    alerta($(this), $(this).attr('title'));
+                } else if (valor != '' && $(this).closest('div').attr('class') == 'conteiner') {
+                    $(this).removeClass('borda').siblings().remove()
+                    $(this).unwrap('.conteiner');
+                }
+
+
+            })
+
+            $('#form').submit(function (event) {
+                $('input[type=text]').each(function () {
+                    var campo1 = $(this).val();
+                    if (campo1 == '' && $(this).closest('div').attr('class') != 'conteiner') {
+                        alerta($(this), $(this).attr('title'));
+                        event.preventDefault();
+                    }
+                    if ($(this).closest('div').attr('class') == 'conteiner') {
+                        event.preventDefault();
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="#" method="post" id="form">
+        <fieldset>
+
+            <label for="nome">Nome:</label>
+            <div class="conteiner">
+                <input id="nome" class="borda" type="text" size="35" name="nome" id=nome />
+                <div class="alerta"><img src="assets/img/logo.png" width=10px>
+                </div>
+            </div>
+
+            <label for="email">E-mail:</label>
+            <div class="conteiner">
+                <input type="text" name="email" size="35" id="email" />
+                <div class="alerta"><img src="assets/img/logo.png" width=10px>
+                </div>
+            </div>
+
+
+            <label for="usuario">Usuário:</label>
+            <input type="text" name="usuario" size="35" title="Digite o usuário" id="usuario" />
+            <label for="senha">Senha:</label>
+            <input type="text" name="senha" size="35" title="Digite a senha" id="senha" />
+            <label for="rep_senha">Repita a senha:</label>
+            <input type="text" name="rep_senha" size="35" title="Digite a senha novamente" id="rep_senha" />
+            <input type="submit" name="enviar" value="Enviar" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
